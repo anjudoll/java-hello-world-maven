@@ -2,6 +2,10 @@ name: Maven Build
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - master
+      - 'releases/**'
 
 jobs:
   build:
